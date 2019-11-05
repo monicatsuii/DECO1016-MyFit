@@ -11,33 +11,87 @@
 </head>
 
 <body>
-
+    <!-- Create a sticky header with the logo and CTA buttons -->
     <header>
         <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
-        <a class="signup" href="#"><button>Try Us For Free</button></a>
-        <a class="login" href="#"><button>Log In</button></a>
+        <span>
+            <a class="btn" href="#">Try Us For Free</a>
+            <a class="btn" href="#">Log In</a>
+        </span>
     </header>
 
-    <section>
-        <div class="heroImage"></div>
-        <div class="hero_text">
-            <h1> Fitness Needs and Goals</br>
-                 Tailored For <em>You</em> </h1>
-            <a class="btn" href="#"> Start Your Free Trial </a>
-        </div>
-    </section>
+    <main>
+    <!-- First section is the banner which contains a hero image and text -->
+        <section>
+            <div class="heroImage"></div>
+            <div class="hero_text">
+                <h1> Fitness Needs and Goals</br>
+                     Tailored For <em>You</em> </h1>
+                <a class="btn" href="#"> Start Your Free Trial </a>
+            </div>
+        </section>
 
-    <section>
-        <h2> Your Fitness Package</h2>
-        <div>a</div>
-        <div>b</div>
-        <div>c</div>
-        <div>d</div>
-    </section>
+    <!-- Second section contains overall information this online service provides -->
+        <section id="section1">
+            <h2> Your Fitness Package</h2>
+                <div class="container">
+                    <div class="blank"></div>
+                    <div class="box">
+                        <h3>Personalised Workouts</h3>
+                            <p> We create customised workouts based on your needs and goals.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Meal Plans</h3>
+                            <p> A specifically designed diet for your fitness plan and goals.</p>
+                    </div>
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                    <div class="box">
+                        <h3>Track Your Progress</h3>
+                            <p> Add habit trackers and check how much you've progressed. </p>
+                    </div>
+                    <div class="box">
+                        <h3>Connect</h3>
+                            <p> Link up your FitBit or Apple Watch for even more accuracy. </p>
+                    </div>
+                    <div class="blank"></div>
+                </div>
+                </div>
+        </section>
+
+        <section id="section2">
+            <h2> Stick to MyFit, and See Results</h2>
+            <div class="container">
+                <div class="blank"></div>
+                <img class="testimonialImg" src="testimonialgirl.jpg" width="220" height="330" alt="Lauren Hood">
+                <div class="testimonial">
+                    <p> With the help of MyFit I was able to achieve my fitness goals without having to spend on a gym membership. The simple and easy to use interface motivates me to keep going!</p>
+                    <p> - Lauren Hood </p>
+                </div>
+                <div class="blank"></div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <a class="btn" href="#"> Join Now </a>
+        </section>
+
+    </main>
 
     <footer>
-        footer
+        <div class="container"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        <img class="logo" src="myfit-landscape.png" width="100" height="35" alt="logo">
     </footer>
+
+  <!-- ADD THE SCRIPT.JS FILE HERE -->
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 
