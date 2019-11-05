@@ -1,0 +1,50 @@
+header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 110px;
+    background-color: white;
+}
+
+.btn {
+    display: inline-block;
+    width: 50px;
+    padding: 14px 18px;
+    background-color: white;
+    color: #697783;
+    border: 2px solid #697783;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.btn:hover, .btn:active{
+    background-color: #697783;
+    color: white;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.box{
+    margin: 50px auto;
+    width: 600px;
+    height: 350px;
+    background-color: azure;
+    /* border: 2px solid #697783; */
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+#progressbar {
+    width: 100%;
+    max-height: 5px;
+    background: #84dccf;
+    overflow: hidden;    
+}
+
+.progress{
+    width: 20%;
+    height: 3px;
+}
