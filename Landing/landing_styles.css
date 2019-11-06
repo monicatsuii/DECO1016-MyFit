@@ -35,6 +35,13 @@ a{
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
+.btn:hover, .btn:active{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #84dccf;
+    border: 2px solid #84dccf;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
 span .btn{
     width: 120px;
     height: 16px;
@@ -42,6 +49,7 @@ span .btn{
     color: white;
     background-color: #84dccf;
     border-radius: 50px;
+    border: none;
 }
 
 span .btn:last-child{
@@ -50,13 +58,6 @@ span .btn:last-child{
     background-color: white;
     color: #697783;
     border: 2px solid #697783;
-}
-
-.btn:hover, .btn:active{
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #84dccf;
-    border: 2px solid #84dccf;
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 span .btn:hover, span .btn:active{

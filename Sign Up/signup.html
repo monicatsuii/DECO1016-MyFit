@@ -21,35 +21,40 @@
     </header>
 
     <main>
-        <div class="box"></div>
-        <div id="progressBar">
-            <div class="progress"></div>
-        <form>
-            <div class="item">
-                <label for="gender">Gender</label>
-                <select name="gender">
-                    <option value="female">Female</option>
-                    <option value="male">Male</option>
-                    <option value="none">Prefer Not to Say</option>
-                 </select>
-            </div>
-            <div class="item">
-                <label for="age">Age</label>
-                <input id="age" name="age" type="number" required>
-            </div>
-            <div class="item">
-                    <label for="height">Height</label>
-                    <input id="height" name="height" type="number" required>
+        <div class="box">
+            <h2> Step 1 of 5 </h2>
+            <div class="progressBar"></div>
+                <div class="progress"></div>
+
+                <form>
+                    <div class="blank"></div>
+                    <div class="item">
+                        <label for="gender">Gender</label>
+                        <select name="gender">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="none">Prefer Not to Say</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number" required>
+                    </div>
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                    <div class="item">
+                            <label for="height">Height</label>
+                            <input id="height" name="height" type="number" required>
+                        </div>
+                    <div class="item">
+                        <label for="weight">Weight</label>
+                        <input id="weight" name="weight" type="number" required>
+                    </div>
+                </form>
+                <button type="submit">Next</button>
+                <div id="actions">
+                    <input type="button" value="Go Back" onclick="history.back()">
                 </div>
-            <div class="item">
-                <label for="weight">Weight</label>
-                <input id="weight" name="weight" type="number" required>
-            </div>
-            <button type="submit">Next</button>
-        </form>
-    
-        <div id="actions">
-            <button type="button" class="fa fa-arrow-left prev"></button>
         </div>
     
     </main>

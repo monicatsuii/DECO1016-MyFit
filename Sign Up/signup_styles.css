@@ -32,19 +32,92 @@ header{
     margin: 50px auto;
     width: 600px;
     height: 350px;
-    background-color: azure;
-    /* border: 2px solid #697783; */
+    background-color: rgba(0,0,0,0.001);
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
 }
 
-#progressbar {
+h2{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 20px 0px 15px 0px;
+    color: #697783;
+}
+
+.progressbar {
+    margin: 20px 0px;
     width: 100%;
     max-height: 5px;
-    background: #84dccf;
+    background: rgba(0,0,0,0.5);
     overflow: hidden;    
 }
 
 .progress{
-    width: 20%;
-    height: 3px;
+    margin: 20px 0px;
+    width: 25%;
+    height: 7px;
+    background: #84dccf;
+}
+
+label{
+    color: #141518;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: block;
+    padding: 10px 0px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-gap: 15px;
+}
+
+input{
+    background: rgba(0,0,0,0.001);
+    width: 80%;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    display: block;
+    margin: 25px auto;
+    width: 150px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #84dccf;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+button:hover, button:active{
+    background-color: #7ccfc3;
+    color: white;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+#actions input{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    transform: translate(5%, -65%);
+    background-color: rgba(0,0,0,0.001);
+    color: #697783;
+    width: 80px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#actions input:hover{
+    color: #141518;
 }
