@@ -31,7 +31,7 @@ header{
 .box{
     margin: 50px auto;
     width: 600px;
-    height: 350px;
+    height: 375px;
     background-color: rgba(0,0,0,0.001);
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
 }
@@ -40,8 +40,29 @@ h2{
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    padding: 20px 0px 15px 0px;
+    padding: 25px 0px 6px 0px;
     color: #697783;
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h4{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center; 
+    margin: 0 auto;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    margin: 60px 130px 60px 130px;
+    line-height: 22px;
+    text-align: center;
 }
 
 .progressbar {
@@ -52,9 +73,37 @@ h2{
     overflow: hidden;    
 }
 
-.progress{
+.progress0{
     margin: 20px 0px;
-    width: 25%;
+    width: 100%;
+    height: 7px;
+    background: #dddddd;
+}
+
+.progress1{
+    margin: 20px 0px;
+    width: 20%;
+    height: 7px;
+    background: #84dccf;
+}
+
+.progress2{
+    margin: 20px 0px;
+    width: 40%;
+    height: 7px;
+    background: #84dccf;
+}
+
+.progress3{
+    margin: 20px 0px;
+    width: 60%;
+    height: 7px;
+    background: #84dccf;
+}
+
+.progress4{
+    margin: 20px 0px;
+    width: 80%;
     height: 7px;
     background: #84dccf;
 }
@@ -75,11 +124,51 @@ form{
 
 input{
     background: rgba(0,0,0,0.001);
+    font-family:'Roboto', sans-serif;
+    font-size: 15px;
     width: 80%;
+    height: 30px;
     padding: 5px 0px;
     box-sizing: border-box;
-    border: none;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
 }
+
+.select:after {
+    content: '\f078';
+    color: #bebebe;
+    right: 11px;
+    top: 6px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    border-left: 1px solid #0ebeff;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    font-family:'Roboto', sans-serif;
+    display: block;
+    width: 80%;
+    max-width: 280px;
+    height: 30px;
+    float: left;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #333;
+    background-color: rgba(0,0,0,0.001);
+    background-image: none;
+    border: 1px solid #bebebe;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
 
 button{
     font-family: 'Roboto', sans-serif;
@@ -91,6 +180,7 @@ button{
     color: white;
     background-color: #84dccf;
     text-align: center;
+    outline: none;
     border: none;
     text-decoration: none;
     border-radius: 10px;
@@ -104,12 +194,17 @@ button:hover, button:active{
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
+.start button{
+    width: 300px;
+}
+
 #actions input{
     font-family: "Roboto", sans-serif;
+    font-size: 13px;
     position: relative;
     transform: translate(5%, -65%);
     background-color: rgba(0,0,0,0.001);
-    color: #697783;
+    color: #697783a2;
     width: 80px;
     height: 30px;
     border: none;
@@ -120,4 +215,44 @@ button:hover, button:active{
 
 #actions input:hover{
     color: #141518;
+}
+
+.selected, .btn1, .btn2 {
+    width: 250px;
+    margin: 15px auto;
+    background-color: rgba(0,0,0,0.001);
+    border: 2px solid #84dccf;
+    color: #84dccf;
+}
+
+.btn2 {
+    width: 100px;
+    height: 100px;
+}
+
+.active, .btn1:hover, .btn2:hover {
+    background-color: #84dccf;
+    color: white;
+  }
+
+.box3{
+    margin: 50px auto;
+    width: 600px;
+    height: 490px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.box4{
+    margin: 50px auto;
+    width: 600px;
+    height: 430px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.container{
+   display: inline;
+   justify-content: space-between; 
+   align-items: baseline;
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="signup_styles.css">
+    <!-- Link page transition animation -->
+    <link rel="stylesheet" href="animate.css">
+    <!-- Add Responsiveness -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <!-- Import Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600|Roboto:300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
+        <span>
+            <a class="btn" href="#">Log In</a>
+        </span>
+    </header>
+
+    <main class="animated fadeInDown">
+            <div class="box3">
+                <h2> Step 2 of 5 </h2>
+                <div class="progressBar"></div>
+                    <div class="progress2"></div> 
+                
+                    <div class="item">
+                        <h3> What's your goal?</h3>
+                        <h4> Feel free to select multiple.</h4>
+                    </div>
+
+                    <div class="item">
+                        <button class='selected' onclick="staySelected()" >Lose Weight</button>
+                    </div>
+
+                    <div class="item">
+                        <button class='selected'>Get Fitter</button>
+                    </div>
+
+                    <div class="item">
+                        <button class='selected'>Build Strength</button>
+                    </div>
+
+                    <div class="item">
+                        <button class='selected'>Reduce Stress</button>
+                    </div>
+
+                    <button onclick="window.location.href = 'http://127.0.0.1:5501/Sign%20Up/signup4.html';">Next</button>
+
+
+                    <div id="actions">
+                            <input type="button" value="Go Back" onclick="history.back()">
+                    </div>
+            </div>
+        
+        </main>
+
+<!-- ADD THE SCRIPT.JS FILE HERE -->
+  <script type="text/javascript" src="signup_script.js"></script>
+</body>
+
+</html>
