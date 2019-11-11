@@ -11,54 +11,136 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <!-- Import Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:600|Roboto:300&display=swap" rel="stylesheet">
+    <!-- Import Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
+        <a href="http://127.0.0.1:5501/Landing/Web_Landing.html">
+            <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
+        </a>
         <span>
-            <a class="btn" href="#">Log In</a>
+            <a class="btn" href="http://127.0.0.1:5501/Sign%20Up/login.html">Log In</a>
         </span>
     </header>
 
+    <!-- HTML for desktop -->
     <main  class="animated fadeInDown">
         <div class="box">
             <h2> Step 1 of 5 </h2>
             <div class="progressBar"></div>
                 <div class="progress1"></div>
 
-                <form>
+                <form action="signup3.html">
                     <div class="blank"></div>
-                    <div class="item">
-                        <label for="gender">Gender</label>
-                            <select required>
-                                <option value="0">Select</option>
-                                <option value="1">Female</option>
-                                <option value="2">Male</option>
-                                <option value="3">Prefer not to disclose</option>
-                            </select>
+
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="gender">Gender</label>
+                                <select required>
+                                    <option value="0">Select</option>
+                                    <option value="1">Female</option>
+                                    <option value="2">Male</option>
+                                    <option value="3">Prefer not to disclose</option>
+                                </select>
                         </div>
-                    <div class="item">
-                        <label for="age">Age</label>
-                        <input id="age" name="age" type="number" required>
                     </div>
-                    <div class="blank"></div>
-                    <div class="blank"></div>
-                    <div class="item">
-                            <label for="height">Height</label>
-                            <input id="height" name="height" type="number" required>
+                    
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="age">Age</label>
+                            <input id="age" name="age" type="number" required>
                         </div>
-                    <div class="item">
-                        <label for="weight">Weight</label>
-                        <input id="weight" name="weight" type="number" required>
+                    </div>
+
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+
+                    <div class="form-group">
+                        <div class="item">
+                                <label for="height">Height</label>
+                                <input id="height" name="height" type="number" placeholder="cm" required>
+                            </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="weight">Weight</label>
+                            <input id="weight" name="weight" type="number" placeholder="kg" required>
+                        </div>
+                    </div>
+
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                    
+                    <div class="form-group">
+                        <div class="next">
+                                <button type="submit">Next</button>
+                        </div>
                     </div>
                 </form>
-                <button onclick="window.location.href = 'http://127.0.0.1:5501/Sign%20Up/signup3.html';">Next</button>
+
                 <div id="actions">
                     <input type="button" value="Go Back" onclick="history.back()">
                 </div>
         </div>
+
+        <!-- HTML for mobile -->
+            <div class="mobile">
+                <div class="Mbox">
+                    <h2> Step 1 of 5 </h2>
+                    <div class="progressBar"></div>
+                    <div class="progress1"></div>
+                    <div class="gender">
+                        <div class="item">
+                            <button class="female">&#9792</button>
+                        </div>
+                        <div class="item">
+                            <button class="male">&#9794</button>
+                        </div>
+                        <div class="item">
+                            <button class="other">&#8709</button>
+                        </div>
+                    </div>
+
+                    <form action="signup3.html">
+                            
+                            <div class="form-group">
+                                <div class="item2">
+                                    <label for="age">Age</label>
+                                    <input id="age" name="age" type="number" required>
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <div class="item2">
+                                        <label for="height">Height</label>
+                                        <input id="height" name="height" type="number" placeholder="cm" required>
+                                    </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <div class="item2">
+                                    <label for="weight">Weight</label>
+                                    <input id="weight" name="weight" type="number" placeholder="kg" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="next">
+                                        <button type="submit">Next</button>
+                                </div>
+                            </div>
+                        </form>
+        
+                    <div id="goback">
+                        <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
+                    </div>
+                </div>
+
+            </div>
     
     </main>
 

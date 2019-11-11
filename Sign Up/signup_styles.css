@@ -8,6 +8,7 @@ header{
     background-color: white;
 }
 
+/* Header Log In Button */
 .btn {
     display: inline-block;
     width: 50px;
@@ -28,12 +29,14 @@ header{
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-.box{
-    margin: 50px auto;
-    width: 600px;
-    height: 375px;
-    background-color: rgba(0,0,0,0.001);
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+/* Font Styling */
+
+h1{
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 80px 0px 10px 0px;
+    color: #697783;
 }
 
 h2{
@@ -58,6 +61,28 @@ h4{
     margin: 0 auto;
 }
 
+h5{
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    color: #84dccf;
+    text-align: center; 
+    margin: 0 auto;
+}
+
+h6{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 35px 0px 0px 0px;
+    color: #697783; 
+}
+
+li{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #141518;
+}
+
 p{
     font-family: 'Roboto', sans-serif;
     margin: 60px 130px 60px 130px;
@@ -65,48 +90,7 @@ p{
     text-align: center;
 }
 
-.progressbar {
-    margin: 20px 0px;
-    width: 100%;
-    max-height: 5px;
-    background: rgba(0,0,0,0.5);
-    overflow: hidden;    
-}
-
-.progress0{
-    margin: 20px 0px;
-    width: 100%;
-    height: 7px;
-    background: #dddddd;
-}
-
-.progress1{
-    margin: 20px 0px;
-    width: 20%;
-    height: 7px;
-    background: #84dccf;
-}
-
-.progress2{
-    margin: 20px 0px;
-    width: 40%;
-    height: 7px;
-    background: #84dccf;
-}
-
-.progress3{
-    margin: 20px 0px;
-    width: 60%;
-    height: 7px;
-    background: #84dccf;
-}
-
-.progress4{
-    margin: 20px 0px;
-    width: 80%;
-    height: 7px;
-    background: #84dccf;
-}
+/* Overall Form Styling */
 
 label{
     color: #141518;
@@ -128,48 +112,13 @@ input{
     font-size: 15px;
     width: 80%;
     height: 30px;
-    padding: 5px 0px;
+    padding: 5px;
     box-sizing: border-box;
     border: 1px solid #bebebe;
     border-radius: 4px;
 }
 
-.select:after {
-    content: '\f078';
-    color: #bebebe;
-    right: 11px;
-    top: 6px;
-    height: 34px;
-    padding: 15px 0px 0px 8px;
-    border-left: 1px solid #0ebeff;
-    position: absolute;
-    pointer-events: none;
-}
-
-/* IE11 hide native button (thanks Matt!) */
-select::-ms-expand {
-    display: none;
-}
-
-select {
-    font-family:'Roboto', sans-serif;
-    display: block;
-    width: 80%;
-    max-width: 280px;
-    height: 30px;
-    float: left;
-    margin: 5px 0px;
-    padding: 0px 24px;
-    font-size: 13px;
-    line-height: 1.75;
-    color: #333;
-    background-color: rgba(0,0,0,0.001);
-    background-image: none;
-    border: 1px solid #bebebe;
-    -ms-word-break: normal;
-    word-break: normal;
-  }
-
+/* Next Step Button */
 button{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -192,6 +141,101 @@ button:hover, button:active{
     background-color: #7ccfc3;
     color: white;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/* Sign Up Page 1 */
+.box{
+    margin: 50px auto;
+    width: 600px;
+    height: 390px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.progressbar {
+    margin: 20px 0px;
+    width: 100%;
+    max-height: 5px;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;    
+}
+
+.progress0{
+    margin: 20px 0px;
+    width: 100%;
+    height: 7px;
+    background: #dddddd;
+}
+
+/* Sign Up Page 2 */
+.progress1{
+    margin: 20px 0px;
+    width: 20%;
+    height: 7px;
+    background: #84dccf;
+}
+
+    /* Gender dropdown select */
+    .select:after {
+    content: '\f078';
+    color: #bebebe;
+    right: 11px;
+    top: 6px;
+    height: 34px;
+    padding: 15px 0px 0px 8px;
+    border-left: 1px solid #0ebeff;
+    position: absolute;
+    pointer-events: none;
+    }
+
+    select {
+    font-family:'Roboto', sans-serif;
+    display: block;
+    width: 80%;
+    max-width: 280px;
+    height: 30px;
+    float: left;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #333;
+    background-color: rgba(0,0,0,0.001);
+    background-image: none;
+    border: 1px solid #bebebe;
+    -ms-word-break: normal;
+    word-break: normal;
+    }
+
+.progress2{
+    margin: 20px 0px;
+    width: 40%;
+    height: 7px;
+    background: #84dccf;
+}
+
+/* Signup Page 3 */
+.progress3{
+    margin: 20px 0px;
+    width: 60%;
+    height: 7px;
+    background: #84dccf;
+}
+
+/* Signup Page 4 */
+.progress4{
+    margin: 20px 0px;
+    width: 80%;
+    height: 7px;
+    background: #84dccf;
+}
+
+/* Signup Page 5 */
+.progress5{
+    margin: 20px 0px;
+    width: 100%;
+    height: 7px;
+    background: #84dccf;
 }
 
 .start button{
@@ -246,13 +290,586 @@ button:hover, button:active{
 .box4{
     margin: 50px auto;
     width: 600px;
+    height: 440px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.box5{
+    margin: 50px auto;
+    width: 600px;
     height: 430px;
     background-color: rgba(0,0,0,0.001);
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
 }
 
+/* Signup Page 6  */
+.box6{
+    margin: 50px auto;
+    width: 600px;
+    height: 490px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.box6 button{
+    width: 250px;
+}
+
+/* Signup Page 7 - Membership Plans */
+.box7{
+    margin: 50px auto;
+    width: 600px;
+    height: 620px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.box7 form {
+    margin: 0 auto;
+    display: table;
+}
+
+.box7 input {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+}
+
+.box7 button{
+    width: 250px;
+}
+
+.box7 a{
+    color: #84dccf;
+    text-decoration: none;
+}
+
 .container{
-   display: inline;
-   justify-content: space-between; 
-   align-items: baseline;
+    display: inline-block;
+    align-content: center;
+    width: 22%;
+ }
+
+
+/* Signup Page 8 - Get your personalised program */
+
+.box8{
+    margin: 50px auto;
+    width: 800px;
+    height: 600px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.box8 form{
+    margin: -20px auto;
+    display: table;
+}
+
+.box8 input{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+}
+
+.box8 button{
+    width:250px;
+}
+
+.box8 a{
+color: #84dccf;
+text-decoration: none;
+}
+
+.box8 h1{
+    margin: 20px auto;
+    padding-top: 40px;
+}
+
+.card {
+    display: flex;
+    align-content: space-around;
+    margin: -20px 20px;
+ }
+
+ .container2{
+     display: flex;
+     flex-direction: column;
+     margin: 50px 10px;
+     padding: 15px;
+     width: 300px;
+     border: 2px solid #69778336;
+     border-radius: 10px;
+ }
+
+ .container2:hover{
+    border: 2px solid #84dccf;
+ }
+
+ button.member{
+     width: 100px;
+     padding: 10px 10px;
+     margin: 0 auto;
+     margin-bottom: 70px;
+     color: #84dccf;
+     background-color: white;
+     border: 1px solid #84dccf;
+ }
+
+ button.member:hover, button.member:active{
+    background-color: #84dccf;
+    color: white;
+ }
+
+ .card2 {
+    display: flex;
+    align-content: space-around;
+    margin: -30px auto;
+ }
+ .container3{
+    display: flex;
+    flex-direction: column;
+    margin: -20px auto;
+    padding: 15px;
+ }
+
+/* Signup Page 9 – Credit Card Information */
+
+.box9{
+    margin: 50px auto;
+    width: 600px;
+    height: 630px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.box9 form {
+    margin: 30px auto;
+    display: table;
+}
+
+.box9 input{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+}
+
+.item3{
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+}
+
+.item3 input{
+    width: 140px;
+    height: 50px;
+}
+
+.box9 button{
+    width: 250px;
+    margin: 50px auto;
+}
+
+/* LogIn Page */
+
+.box10{
+    margin: 50px auto;
+    width: 600px;
+    height: 480px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.box10 form {
+    margin: 0 auto;
+    display: table;
+}
+
+.box10 input {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+}
+
+.box10 button{
+    margin: 70px auto;
+    margin-bottom: -50px;
+    width: 250px;
+}
+
+.box10 p{
+    font-size: 12px;
+}
+
+.box10 a{
+    color: #84dccf;
+    text-decoration: none;
+}
+
+.box5 #myDIV {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Hide mobile elements */
+.mobile{
+    display: none;
+}
+
+/* ---------------------
+     MEDIA QUERIES 
+    for mobile
+--------------------- */
+
+@media only screen and (max-width: 425px) {
+
+/* Show mobile and hide desktop elements */
+.mobile{
+    display: block;
+}
+.logo{
+    display: none;
+}
+.btn{
+    display: none;
+}
+.box, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    display: none;
+}
+
+/* next button */
+.next button{
+    font-size: 18px;
+    margin: 40px auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+/* back button */
+button.goback {
+    background-color: white;
+    color: #697783;
+    float: left;
+    margin: 5px -130px;
+}
+
+/* Signup Page1 – Greeting */
+.logo2{
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+p{
+    font-size: 20px;
+    margin: 60px 60px 60px 60px;
+}
+
+button{
+    width: 300px;
+    padding: 14px 18px;
+    color: white;
+    background-color: #84dccf;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+/* Signup Page2 – Physical Information */
+header{
+    display: none;
+}
+
+h2{ 
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+/* gender selection */
+    .gender{
+    display: flex;
+    justify-content: space-evenly;
+    height: 130px;
+    }
+
+    button.female, button.male, button.other {
+        font-size: 35px;
+        display: inline-block;
+        width: 100px;
+        padding: 14px 18px;
+        color: #84dccf;
+        background-color: white;
+        border: 2px solid #84dccf;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        border-radius: 15px;
+    }
+    
+    button.other {
+        font-size: 40px;
+    }
+
+    button.female:hover, button.female:active{
+        background-color: #7ccfc3;
+        color: white;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+
+    button.male:hover, button.male:active{
+        background-color: #7ccfc3;
+        color: white;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+
+    button.other:hover, button.other:active{
+        background-color: #7ccfc3;
+        color: white;
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    }
+
+    /* form styles */
+        label{
+            font-size: 20px;
+        }
+
+        .form-group{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center; 
+        }
+
+        form{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center; 
+        }
+
+        /* space between input */
+        .item2{
+            padding: 5px;
+        }
+
+        input{
+            width: 300px;
+            height: 50px;
+        }
+
+/* Signup Page 3 – What's your goal */
+
+h3{
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.item{
+    padding-bottom: 0.5px;
+}
+
+
+button.selected {
+    font-size: 20px;
+}
+
+.next button{
+    margin-top: 25px;
+}
+
+/* Signup Page 4 – What's your fitness level */
+
+.btn1{
+    font-size: 20px;
+    margin: 30px auto;
+}
+
+.nextP4 button{
+    font-size: 18px;
+    margin: 100px auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+/* Signup Page 5 – */
+
+.btn2{
+    font-size: 20px;
+    padding: 10px;
+    height: 120px;
+    width: 120px;
+}
+
+#myDIV2 {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#myDIV3 {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    display: inline-block;
+    align-content: center;
+    width: 40%;
+ }
+
+ .nextP5 button{
+    font-size: 18px;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+/* Signup Page 6 – What kind of excercise? */
+
+h5{
+    font-size: 28px;
+    padding: 10px 10px;
+    color: #141518;
+
+}
+
+.btn1 {
+    margin: 20px auto;
+}
+
+.nextP6 button{
+    font-size: 18px;
+    margin: 25px auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+/* SignUp Notifications page */
+.item4{
+    margin: 200px 10px;
+    margin-bottom: 30px;
+}
+
+.btn3 {
+    font-size: 18px;
+    width: 340px;
+    margin: 15px auto;
+    background-color: rgba(0,0,0,0.001);
+    border: 2px solid #84dccf;
+    color: #84dccf;
+}
+
+.btn3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn3:nth-of-type(1){
+    background-color: #84dccf;
+    color: white;
+}
+
+.btn3:nth-of-type(2){
+    margin-bottom: 220px;
+}
+
+.btn3:hover, .btn3:hover {
+    background-color: #84dccf;
+    color: white;
+  }
+
+
+/* Signup Page 7 – Account Information */
+h6{
+    font-size: 30px;
+    padding: 10px;
+    margin: 80px auto;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #84dccf;
+}
+
+.item2{
+ 
+}
+
+.nextP7 button{
+    font-size: 18px;
+    margin: 40px auto;
+    margin-bottom: 10px;
+    padding: 18px 10px;
+    width: 340px;
+}
+
+/* Signup Page 8 – Membership Plans */
+
+
+h3{
+    padding: 5px;
+    font-size: 25px;
+}
+
+h7{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px auto;
+    font-size: 18px;
+    color: #84dccf;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-between; */
+    margin: -20px auto;
+ }
+
+.container2{
+    margin: 10px auto;
+    padding: 15px;
+    width: 300px;
+    border: 2px solid #69778336;
+    border-radius: 10px;
+}
+
+/* Signup Page 9 – Credit Card details */
+
+.blankSpace{
+    height: 60px;
+    background-color: white;
+}
+
+.container4{
+    padding-left: 23px;
+    float: right;
+
+}
+
+.blankSpace2{
+    height: 90px;
+    background-color: white;
+}
+
 }

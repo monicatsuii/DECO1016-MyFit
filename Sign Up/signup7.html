@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="signup_styles.css">
+    <!-- Link page transition animation -->
+    <link rel="stylesheet" href="animate.css">
+    <!-- Add Responsiveness -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <!-- Import Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600|Roboto:300&display=swap" rel="stylesheet">
+    <!-- Import Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="http://127.0.0.1:5501/Landing/Web_Landing.html">
+            <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
+        </a>
+        <span>
+            <a class="btn" href="http://127.0.0.1:5501/Sign%20Up/login.html">Log In</a>
+        </span>
+    </header>
+
+    <main class="animated fadeInDown">
+        <!-- HTML for desktop -->
+            <div class="box7">
+            <h6> Get your personalised program! </h6>
+             <form action="signup8.html">
+                <div class="form-group">
+                        <div class="item2">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <div class="messages"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="item2">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                            <div class="messages"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="item2">
+                            <label for="password"></label>
+                            <input type="password" id="password" name="password" placeholder="Your password" required>
+                            <div class="messages"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                            <div class="nextP7">
+                                <button type="submit">Create My Account</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div class="item">
+                    <p> Already have an account? <a href="http://127.0.0.1:5501/Sign%20Up/login.html">Sign In Here.</a> By signing up you are agreeing to our <a href="#">Terms and Conditions</a> </p>
+                    </div>
+                    
+                    <div id="actions">
+                            <input type="button" value="Go Back" onclick="history.back()">
+                    </div>
+            
+                </div>
+
+
+        <!-- HTML for mobile -->
+        <div class="mobile">
+                <div class="Mbox">
+                    <h6> Let's get you signed up!</h6>
+                    <form action="signup8.html">    
+                        <div class="form-group">
+                            <div class="item2">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                                <div class="messages"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="item2">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                                <div class="messages"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="item2">
+                                <label for="password"></label>
+                                <input type="password" id="password" name="password" placeholder="Your password" required>
+                                <div class="messages"></div>
+                            </div>
+                        </div>
+                            <div class="item">
+                                    <p> Already have an account? <a href="http://127.0.0.1:5501/Sign%20Up/login.html">Sign In Here.</a> By signing up you are agreeing to our <a href="#">Terms and Conditions</a> </p>
+                            </div>
+                            
+                        <div class="form-group">
+                            <div class="nextP7">
+                                <button type="submit">Create My Account</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="goback">
+                        <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
+                    </div>

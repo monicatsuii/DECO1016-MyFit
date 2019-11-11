@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="signup_styles.css">
+    <!-- Link page transition animation -->
+    <link rel="stylesheet" href="animate.css">
+    <!-- Add Responsiveness -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <!-- Import Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600|Roboto:300&display=swap" rel="stylesheet">
+    <!-- Import Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="http://127.0.0.1:5501/Landing/Web_Landing.html">
+            <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
+        </a>
+        <span>
+            <a class="btn" href="http://127.0.0.1:5501/Sign%20Up/login.html">Log In</a>
+        </span>
+    </header>
+
+    <main  class="animated fadeInDown">
+        <!-- HTML for desktop -->
+            <div class="box9">
+            <h2> Confirm Your Purchase </h2>
+            <h4> Please input your payment details. </br> Trust us, investing in your health is a wise choice.</h4>
+                <form action="endpoint.html">
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="cardnumber"></label>
+                            <input id="cardnumber" name="cardnumber" type="number" placeholder="Card Number" required>
+                            <div class="messages"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Name On Card" required>
+                            <div class="messages"></div>
+                        </div>
+                    </div>
+                        <div class="container4">
+                            <div class="form-group">
+                                <div class="item3">
+                                        <label for="expirydate"></label>
+                                        <input class="inputCard" name="expiry" id="expiry" type="month" required/>
+                                        <div class="messages"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="item3 form-group">
+                                        <label for="password"></label>
+                                        <input type="password" id="password" name="password" placeholder="CVV" required>
+                                        <div class="messages"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="nextP7">
+                                    <button type="submit"> Activate MyFit</button>
+                            </div>
+                        </div>
+                    </form>
+                
+                    <!-- <button onclick="window.location.href = 'http://127.0.0.1:5501/Endpoint/endpoint.html';"> Activate MyFit </button> -->
+                    <div id="actions">
+                        <input type="button" value="Go Back" onclick="history.back()">
+                    </div>
+            </div>
+
+       <!-- HTML for mobile -->
+       <div class="mobile">
+            <div class="Mbox">
+                <div class="blankSpace"> </div>
+                <h2> Confirm Your Purchase </h2>
+                <h4> Please input your payment details. </br> Trust us, investing in your health is a wise choice.</h4>
+                <form>
+                        <div class="item">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Card Number">
+                            <div class="messages"></div>
+                        </div>
+                        <div class="item">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Name On Card">
+                            <div class="messages"></div>
+                        </div>
+                        <div class="container4">
+                                <div class="item3">
+                                        <label for="password"></label>
+                                        <input type="password" id="password" name="password" placeholder="Expiry Date">
+                                        <div class="messages"></div>
+                                </div>
+                                <div class="item3">
+                                        <label for="password"></label>
+                                        <input type="password" id="password" name="password" placeholder="CVV">
+                                        <div class="messages"></div>
+                                </div>
+                        </div>
+                    </form>
+                
+                    
+                <div class="blankSpace2"> </div>
+                <div class="nextP6">
+                        <button onclick="window.location.href = 'http://127.0.0.1:5501/Endpoint/endpoint.html';">Next</button>
+                </div>
+                <div id="goback">
+                    <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
+                </div>
+            </div>
+        
+        </main>
+    
+    <!-- ADD THE SCRIPT.JS FILE HERE -->
+      <script type="text/javascript" src="signup_script.js"></script>
+    </body>
+    
+    </html>
