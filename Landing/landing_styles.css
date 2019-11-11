@@ -222,6 +222,8 @@ a.footer:hover {
     transform: translate(-50%, -300%);
 }
 
+/* realign cards */
+
 .container{
     width: 100%;
     box-sizing: border-box;

@@ -222,6 +222,14 @@ button:hover, button:active{
     background: #84dccf;
 }
 
+.box3{
+    margin: 50px auto;
+    width: 600px;
+    height: 490px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
 /* Signup Page 4 */
 .progress4{
     margin: 20px 0px;
@@ -230,12 +238,30 @@ button:hover, button:active{
     background: #84dccf;
 }
 
+
+.box4{
+    margin: 50px auto;
+    width: 600px;
+    height: 440px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+
 /* Signup Page 5 */
 .progress5{
     margin: 20px 0px;
     width: 100%;
     height: 7px;
     background: #84dccf;
+}
+
+.box5{
+    margin: 50px auto;
+    width: 600px;
+    height: 430px;
+    background-color: rgba(0,0,0,0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
 }
 
 .start button{
@@ -279,29 +305,6 @@ button:hover, button:active{
     color: white;
   }
 
-.box3{
-    margin: 50px auto;
-    width: 600px;
-    height: 490px;
-    background-color: rgba(0,0,0,0.001);
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
-}
-
-.box4{
-    margin: 50px auto;
-    width: 600px;
-    height: 440px;
-    background-color: rgba(0,0,0,0.001);
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
-}
-
-.box5{
-    margin: 50px auto;
-    width: 600px;
-    height: 430px;
-    background-color: rgba(0,0,0,0.001);
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
-}
 
 /* Signup Page 6  */
 .box6{
@@ -812,9 +815,6 @@ a {
     color: #84dccf;
 }
 
-.item2{
- 
-}
 
 .nextP7 button{
     font-size: 18px;
