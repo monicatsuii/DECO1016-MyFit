@@ -27,125 +27,125 @@
     </header>
 
     <!-- HTML for desktop -->
-    <main  class="animated fadeInDown">
+    <main class="animated fadeInDown">
         <div class="box">
             <h2> Step 1 of 5 </h2>
             <div class="progressBar"></div>
+            <div class="progress1"></div>
+
+            <form action="signup3.html">
+                <div class="blank"></div>
+
+                <div class="form-group">
+                    <div class="item">
+                        <label for="gender">Gender</label>
+                        <select required>
+                            <option value="0">Select</option>
+                            <option value="1">Female</option>
+                            <option value="2">Male</option>
+                            <option value="3">Prefer not to disclose</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="item">
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number" required>
+                    </div>
+                </div>
+
+                <div class="blank"></div>
+                <div class="blank"></div>
+
+                <div class="form-group">
+                    <div class="item">
+                        <label for="height">Height</label>
+                        <input id="height" name="height" type="number" placeholder="cm" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="item">
+                        <label for="weight">Weight</label>
+                        <input id="weight" name="weight" type="number" placeholder="kg" required>
+                    </div>
+                </div>
+
+                <div class="blank"></div>
+                <div class="blank"></div>
+
+                <div class="form-group">
+                    <div class="next">
+                        <button type="submit">Next</button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="actions">
+                <input type="button" value="Go Back" onclick="history.back()">
+            </div>
+        </div>
+
+        <!-- HTML for mobile -->
+        <div class="mobile">
+            <div class="Mbox">
+                <h2> Step 1 of 5 </h2>
+                <div class="progressBar"></div>
                 <div class="progress1"></div>
+                <div class="gender">
+                    <div class="item">
+                        <button class="female">&#9792</button>
+                    </div>
+                    <div class="item">
+                        <button class="male">&#9794</button>
+                    </div>
+                    <div class="item">
+                        <button class="other">&#8709</button>
+                    </div>
+                </div>
 
                 <form action="signup3.html">
-                    <div class="blank"></div>
 
                     <div class="form-group">
-                        <div class="item">
-                            <label for="gender">Gender</label>
-                                <select required>
-                                    <option value="0">Select</option>
-                                    <option value="1">Female</option>
-                                    <option value="2">Male</option>
-                                    <option value="3">Prefer not to disclose</option>
-                                </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="item">
+                        <div class="item2">
                             <label for="age">Age</label>
                             <input id="age" name="age" type="number" required>
                         </div>
                     </div>
 
-                    <div class="blank"></div>
-                    <div class="blank"></div>
-
                     <div class="form-group">
-                        <div class="item">
-                                <label for="height">Height</label>
-                                <input id="height" name="height" type="number" placeholder="cm" required>
-                            </div>
+                        <div class="item2">
+                            <label for="height">Height</label>
+                            <input id="height" name="height" type="number" placeholder="cm" required>
+                        </div>
                     </div>
 
                     <div class="form-group">
-                        <div class="item">
+                        <div class="item2">
                             <label for="weight">Weight</label>
                             <input id="weight" name="weight" type="number" placeholder="kg" required>
                         </div>
                     </div>
 
-                    <div class="blank"></div>
-                    <div class="blank"></div>
-                    
                     <div class="form-group">
                         <div class="next">
-                                <button type="submit">Next</button>
+                            <button type="submit">Next</button>
                         </div>
                     </div>
                 </form>
 
-                <div id="actions">
-                    <input type="button" value="Go Back" onclick="history.back()">
+                <div id="goback">
+                    <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
                 </div>
+            </div>
+
         </div>
 
-        <!-- HTML for mobile -->
-            <div class="mobile">
-                <div class="Mbox">
-                    <h2> Step 1 of 5 </h2>
-                    <div class="progressBar"></div>
-                    <div class="progress1"></div>
-                    <div class="gender">
-                        <div class="item">
-                            <button class="female">&#9792</button>
-                        </div>
-                        <div class="item">
-                            <button class="male">&#9794</button>
-                        </div>
-                        <div class="item">
-                            <button class="other">&#8709</button>
-                        </div>
-                    </div>
-
-                    <form action="signup3.html">
-                            
-                            <div class="form-group">
-                                <div class="item2">
-                                    <label for="age">Age</label>
-                                    <input id="age" name="age" type="number" required>
-                                </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <div class="item2">
-                                        <label for="height">Height</label>
-                                        <input id="height" name="height" type="number" placeholder="cm" required>
-                                    </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <div class="item2">
-                                    <label for="weight">Weight</label>
-                                    <input id="weight" name="weight" type="number" placeholder="kg" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="next">
-                                        <button type="submit">Next</button>
-                                </div>
-                            </div>
-                        </form>
-        
-                    <div id="goback">
-                        <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
-                    </div>
-                </div>
-
-            </div>
-    
     </main>
 
-<!-- ADD THE SCRIPT.JS FILE HERE -->
-  <script type="text/javascript" src="signup_script.js"></script>
+    <!-- ADD THE SCRIPT.JS FILE HERE -->
+    <script type="text/javascript" src="signup_script.js"></script>
 </body>
 
 </html>
