@@ -16,27 +16,28 @@
 </head>
 
 <body>
-
+    <!-- Create a NAV bar in the header -->
     <header>
-        <a href="http://127.0.0.1:5501/Landing/index.html">
+        <a href="index.html">
             <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
         </a>
         <span>
-            <a class="btn" href="http://127.0.0.1:5501/Sign%20Up/login.html">Log In</a>
+            <a class="btn" href="login.html">Log In</a>
         </span>
     </header>
 
     <main class="animated fadeInDown">
         <!-- HTML for desktop -->
         <div class="box5">
+            <!-- Progress Bar -->
             <h2> Step 4 of 5 </h2>
             <div class="progressBar"></div>
             <div class="progress4"></div>
-
+            <!-- Question -->
             <div class="item">
                 <h3> On average, how long </br> do you work out for?</h3>
             </div>
-
+            <!-- Options -->
             <div id="myDIV">
                 <div class="container">
                     <button class="btn2"> 0 - 10 mins </button>
@@ -51,10 +52,9 @@
                     <button class="btn2"> 60 + mins </button>
                 </div>
             </div>
-
-            <button onclick="window.location.href = 'http://127.0.0.1:5501/Sign%20Up/signup6.html';">Next</button>
-
-
+            <!-- Go to Next Page -->
+            <button onclick="window.location.href = 'signup6.html';">Next</button>
+            <!-- Back Button -->
             <div id="actions">
                 <input type="button" value="Go Back" onclick="history.back()">
             </div>
@@ -62,15 +62,17 @@
 
         <!-- HTML for mobile -->
         <div class="mobile">
+            <!-- Separate new div for displaying mobile  -->
             <div class="Mbox">
+                <!-- Progress Bar -->
                 <h2> Step 4 of 5 </h2>
                 <div class="progressBar"></div>
                 <div class="progress4"></div>
-
+                <!-- Question -->
                 <div class="item">
                     <h3> On average, how long </br> do you work out for?</h3>
                 </div>
-
+                <!-- Options -->
                 <div id="myDIV2">
                     <div class="container">
                         <button class="btn2"> 0 - 10 mins </button>
@@ -87,11 +89,12 @@
                         <button class="btn2"> 60 + mins </button>
                     </div>
                 </div>
-
+                <!-- Go to Next Page -->
                 <div class="nextP5">
                     <button
-                        onclick="window.location.href = 'http://127.0.0.1:5501/Sign%20Up/signup6.html';">Next</button>
+                        onclick="window.location.href = 'signup6.html';">Next</button>
                 </div>
+                <!-- Back Button -->
                 <div id="goback">
                     <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
                 </div>

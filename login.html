@@ -16,11 +16,11 @@
 <body>
 
     <header>
-        <a href="http://127.0.0.1:5501/Landing/index.html">
+        <a href="index.html">
             <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
         </a>
         <span>
-            <a class="btn" href="http://127.0.0.1:5501/Landing/index.html"> Home </a>
+            <a class="btn" href="index.html"> Home </a>
         </span>
     </header>
 
@@ -28,51 +28,72 @@
         <!-- HTML for desktop -->
         <div class="box10">
             <h1> Welcome Back! </h1>
-            <form>
-                <div class="item2">
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="Your email">
-                    <div class="messages"></div>
+            <!-- Form -->
+            <form action="endpoint.html">
+                <div class="form-group">
+                    <div class="item2">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                        <div class="messages"></div>
+                    </div>
                 </div>
-                <div class="item2">
-                    <label for="password"></label>
-                    <input type="password" id="password" name="password" placeholder="Your password">
-                    <div class="messages"></div>
+                <div class="form-group">
+                    <div class="item2">
+                        <label for="password"></label>
+                        <input type="password" id="password" name="password" placeholder="Your password" required>
+                        <div class="messages"></div>
+                    </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <div class="nextP7">
+                        <button type="submit"> Log In</button>
+                    </div>
                 </div>
             </form>
 
-            <button onclick="window.location.href = 'http://127.0.0.1:5501/Endpoint/endpoint.html';"> Log In </button>
-
+            <!-- Sign In -->
             <div class="item2">
-                <p> Don't have an account? <a href="http://127.0.0.1:5501/Sign%20Up/signup1.html#">Sign up here.</a></p>
+                <p> Don't have an account? <a href="signup1.html">Sign up here.</a></p>
             </div>
         </div>
+
         <!-- HTML for mobile -->
         <div class="mobile">
+            <!-- Separate new div for displaying mobile  -->
             <div class="Mbox">
-                <img class="logo2" src="myfit-landscape.png" width="200" height="70" alt="logo">
-                <form>
-                    <div class="item2">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Your email">
-                        <div class="messages"></div>
+                <a href="index.html">
+                    <img class="logo2" src="myfit-landscape.png" width="200" height="70" alt="logo">
+                </a>
+                
+            <!-- Form -->
+            <form action="endpoint.html">
+                    <div class="form-group">
+                        <div class="item2">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                            <div class="messages"></div>
+                        </div>
                     </div>
-                    <div class="item2">
-                        <label for="password"></label>
-                        <input type="password" id="password" name="password" placeholder="Your password">
-                        <div class="messages"></div>
+                    <div class="form-group">
+                        <div class="item2">
+                            <label for="password"></label>
+                            <input type="password" id="password" name="password" placeholder="Your password" required>
+                            <div class="messages"></div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <p> Don't have an account? </br><a href="http://127.0.0.1:5501/Sign%20Up/signup1.html"> Create
-                                one here.</a> </p>
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <div class="nextP7">
+                            <button type="submit"> Log In</button>
+                        </div>
                     </div>
-                </form>
-                <div class="start2">
-                    <button onclick="window.location.href = 'http://127.0.0.1:5501/Endpoint/endpoint.html';">Log
-                        In</button>
+            </form>
+    
+                <!-- Sign In -->
+                <div class="item2">
+                    <p> Don't have an account? <a href="signup1.html">Sign up here.</a></p>
                 </div>
-            </div>
-        </div>
 
     </main>
 

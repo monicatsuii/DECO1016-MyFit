@@ -16,38 +16,38 @@
 </head>
 
 <body>
-
+    <!-- Create a NAV bar in the header -->
     <header>
-        <a href="http://127.0.0.1:5501/Landing/index.html">
+        <a href="index.html">
             <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
         </a>
         <span>
-            <a class="btn" href="http://127.0.0.1:5501/Sign%20Up/login.html">Log In</a>
+            <a class="btn" href="login.html">Log In</a>
         </span>
     </header>
 
     <main class="animated fadeInDown">
         <!-- HTML for desktop -->
         <div class="box6">
+            <!-- Progress Bar -->
             <h2> Step 5 of 5 </h2>
             <div class="progressBar"></div>
             <div class="progress5"></div>
-
+            <!-- Question -->
             <div class="item">
                 <h3> What kind of exercise do you usually do or enjoy doing?</h3>
                 <h4> Click all that apply. </h4>
             </div>
-
+            <!-- Options -->
             <div id="myDIV">
                 <button class="btn1"> Walking </button>
                 <button class="btn1"> Cardio </button>
                 <button class="btn1"> Weight Training </button>
                 <button class="btn1"> Yoga </button>
             </div>
-
-            <button onclick="window.location.href = 'http://127.0.0.1:5501/Sign%20Up/signup7.html';">Next</button>
-
-
+            <!-- Go to Next Page -->
+            <button onclick="window.location.href = 'signup7.html';">Next</button>
+            <!-- Back Button -->
             <div id="actions">
                 <input type="button" value="Go Back" onclick="history.back()">
             </div>
@@ -55,26 +55,30 @@
 
         <!-- HTML for mobile -->
         <div class="mobile">
+            <!-- Separate new div for displaying mobile -->
             <div class="Mbox">
                 <h2> Step 5 of 5 </h2>
+                <!-- Progress Bar -->
                 <div class="progressBar"></div>
                 <div class="progress5"></div>
+                <!-- Questions -->
                 <div class="item">
                     <h5> What kind of exercise do you usually do or enjoy doing?</h5>
                     <h4> Click all that apply. </h4>
                 </div>
-
+                <!-- Options -->
                 <div id="myDIV">
                     <button class="btn1"> Walking </button>
                     <button class="btn1"> Cardio </button>
                     <button class="btn1"> Weight Training </button>
                     <button class="btn1"> Yoga </button>
                 </div>
-
+                <!-- Go to Next Page -->
                 <div class="nextP6">
                     <button
-                        onclick="window.location.href = 'http://127.0.0.1:5501/Sign%20Up/signup-notification.html';">Next</button>
+                        onclick="window.location.href = 'signup-notification.html';">Next</button>
                 </div>
+                <!-- Back Button -->
                 <div id="goback">
                     <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
                 </div>

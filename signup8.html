@@ -16,13 +16,13 @@
 </head>
 
 <body>
-
+    <!-- Create a NAV bar in the header -->
     <header>
-        <a href="http://127.0.0.1:5501/Landing/index.html">
+        <a href="index.html">
             <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
         </a>
         <span>
-            <a class="btn" href="http://127.0.0.1:5501/Sign%20Up/login.html">Log In</a>
+            <a class="btn" href="login.html">Log In</a>
         </span>
     </header>
 
@@ -33,6 +33,7 @@
                 <h1> Hey Annie, which plan would you like?</h1>
             </div>
 
+            <!-- Membership Plans -->
             <div class="card">
                 <div class="container2">
                     <h3> Free </h3>
@@ -43,7 +44,7 @@
                 </div>
                 <div class="container2">
                     <h3> Basic </h3>
-                    <h5> $3.99 per week </h5>
+                    <h7> $3.99 per week </h7>
                     <ul>
                         <li> Access to unlimited workout videos</li>
                         <li> Connect your device</li>
@@ -52,8 +53,8 @@
                 </div>
                 <div class="container2">
                     <h3> Pro </h3>
-                    <h5> $7.99 per week </h5>
-                    <h5> <em> Reccommended </em></h5>
+                    <h7> $7.99 per week </h7>
+                    <h7> <em> Reccommended </em></h7>
                     <ul>
                         <li> Access to unlimited workout videos</li>
                         <li> Connect your device</li>
@@ -62,6 +63,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Choose Buttons -->
             <div class="card2">
                 <div class="container3">
                     <button class="member"> Choose </button>
@@ -74,10 +76,10 @@
                 </div>
             </div>
 
-            <button onclick="window.location.href = 'http://127.0.0.1:5501/Sign%20Up/signup9.html';"> Begin MyFit
-                Journey </button>
+            <!-- Go to Next Page -->
+            <button onclick="window.location.href = 'signup9.html';"> Begin MyFit Journey </button>
 
-
+            <!-- Back Button -->
             <div id="actions">
                 <input type="button" value="Go Back" onclick="history.back()">
             </div>
@@ -85,8 +87,10 @@
 
         <!-- HTML for mobile -->
         <div class="mobile">
+            <!-- Separate new div for displaying mobile -->
             <div class="Mbox">
                 <h2> Choose your plan.</h2>
+                <!-- Membership Plans -->
                 <div class="card">
                     <div class="container2">
                         <h3> Free </h3>
@@ -117,10 +121,12 @@
                     </div>
                 </div>
 
+                <!-- Go to Next Page -->
                 <div class="nextP6">
-                    <button onclick="window.location.href = 'http://127.0.0.1:5501/Sign%20Up/signup9.html';"> Select
+                    <button onclick="window.location.href = 'signup9.html';"> Select
                     </button>
                 </div>
+                <!-- Back Button -->
                 <div id="goback">
                     <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
                 </div>

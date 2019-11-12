@@ -16,13 +16,13 @@
 </head>
 
 <body>
-
+    <!-- Create a NAV bar in the header -->
     <header>
-        <a href="http://127.0.0.1:5501/Landing/index.html">
+        <a href="index.html">
             <img class="logo" src="myfit-landscape.png" width="200" height="70" alt="logo">
         </a>
         <span>
-            <a class="btn" href="http://127.0.0.1:5501/Sign%20Up/login.html">Log In</a>
+            <a class="btn" href="login.html">Log In</a>
         </span>
     </header>
 
@@ -31,6 +31,8 @@
         <div class="box9">
             <h2> Confirm Your Purchase </h2>
             <h4> Please input your payment details. </br> Trust us, investing in your health is a wise choice.</h4>
+            
+            <!-- Form -->
             <form action="endpoint.html">
                 <div class="form-group">
                     <div class="item">
@@ -55,22 +57,21 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="item3 form-group">
+                        <div class="item3">
                             <label for="password"></label>
                             <input type="password" id="password" name="password" placeholder="CVV" required>
                             <div class="messages"></div>
                         </div>
                     </div>
                 </div>
-
+                <!-- Submit Button -->
                 <div class="form-group">
                     <div class="nextP7">
                         <button type="submit"> Activate MyFit</button>
                     </div>
                 </div>
             </form>
-
-            <!-- <button onclick="window.location.href = 'http://127.0.0.1:5501/Endpoint/endpoint.html';"> Activate MyFit </button> -->
+            <!-- Back Button -->
             <div id="actions">
                 <input type="button" value="Go Back" onclick="history.back()">
             </div>
@@ -79,44 +80,55 @@
         <!-- HTML for mobile -->
         <div class="mobile">
             <div class="Mbox">
+                <!-- Separate new div for displaying mobile  -->
                 <div class="blankSpace"> </div>
                 <h2> Confirm Your Purchase </h2>
                 <h4> Please input your payment details. </br> Trust us, investing in your health is a wise choice.</h4>
-                <form>
-                    <div class="item">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Card Number">
-                        <div class="messages"></div>
-                    </div>
-                    <div class="item">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Name On Card">
-                        <div class="messages"></div>
-                    </div>
-                    <div class="container4">
-                        <div class="item3">
-                            <label for="password"></label>
-                            <input type="password" id="password" name="password" placeholder="Expiry Date">
+                <!-- Form -->
+                <form action="endpoint.html">
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Card Number" required>
                             <div class="messages"></div>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="item">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Name On Card" required>
+                            <div class="messages"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="container4">
+                            <div class="item3">
+                                <label for="expirydate"></label>
+                                <input class="inputCard" name="expiry" id="expiry" type="month" required />
+                                <div class="messages"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="item3">
                             <label for="password"></label>
                             <input type="password" id="password" name="password" placeholder="CVV">
                             <div class="messages"></div>
                         </div>
                     </div>
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <div class="nextP7">
+                            <button type="submit"> Activate MyFit</button>
+                        </div>
+                    </div>
                 </form>
-
-
-                <div class="blankSpace2"> </div>
-                <div class="nextP6">
-                    <button
-                        onclick="window.location.href = 'http://127.0.0.1:5501/Endpoint/endpoint.html';">Next</button>
-                </div>
+                <!-- Back Button -->
                 <div id="goback">
                     <button class="goback" onclick="goBack()"><i class="material-icons">arrow_back</i></button>
                 </div>
             </div>
+        </div>
 
     </main>
 

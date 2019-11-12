@@ -31,50 +31,13 @@ header{
 
 /* Font Styling */
 
-h1{
-    font-size: 30px;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    padding: 80px 0px 10px 0px;
-    color: #697783;
-}
-
+/* Steps heading text */
 h2{
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     padding: 25px 0px 6px 0px;
     color: #697783;
-}
-
-h3{
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    margin: 0 auto;
-}
-
-h4{
-    font-size: 17px;
-    font-family: 'Nunito', sans-serif;
-    text-align: center; 
-    margin: 0 auto;
-}
-
-h5{
-    font-size: 14px;
-    font-family: 'Nunito', sans-serif;
-    color: #84dccf;
-    text-align: center; 
-    margin: 0 auto;
-}
-
-h6{
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    padding: 35px 0px 0px 0px;
-    color: #697783; 
 }
 
 li{
@@ -143,6 +106,7 @@ button:hover, button:active{
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
+
 /* Sign Up Page 1 */
 .box{
     margin: 50px auto;
@@ -166,6 +130,12 @@ button:hover, button:active{
     height: 7px;
     background: #dddddd;
 }
+/* Create My Fitness Plan Button */
+.start button{
+    width: 300px;
+}
+
+
 
 /* Sign Up Page 2 */
 .progress1{
@@ -230,6 +200,22 @@ button:hover, button:active{
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
 }
 
+/* heading text */
+h3{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Subheading text */
+h4{
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center; 
+    margin: 0 auto;
+}
+
 /* Signup Page 4 */
 .progress4{
     margin: 20px 0px;
@@ -264,8 +250,10 @@ button:hover, button:active{
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
 }
 
-.start button{
-    width: 300px;
+.box5 #myDIV {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
 }
 
 #actions input{
@@ -315,6 +303,13 @@ button:hover, button:active{
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
 }
 
+/* heading text */
+h5{
+    font-size: 28px;
+    padding: 10px 10px;
+    color: #141518;
+}
+
 .box6 button{
     width: 250px;
 }
@@ -326,6 +321,15 @@ button:hover, button:active{
     height: 620px;
     background-color: rgba(0,0,0,0.001);
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+/* heading text */
+h6{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 35px 0px 0px 0px;
+    color: #697783; 
 }
 
 .box7 form {
@@ -357,6 +361,29 @@ button:hover, button:active{
 
 /* Signup Page 8 - Get your personalised program */
 
+/* heading text */
+h1{
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 80px 0px 10px 0px;
+    color: #697783;
+}
+
+/* price text */
+h7{
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    color: #84dccf;
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.box8 a{
+    color: #84dccf;
+    text-decoration: none;
+}
+    
 .box8{
     margin: 50px auto;
     width: 800px;
@@ -380,15 +407,7 @@ button:hover, button:active{
     width:250px;
 }
 
-.box8 a{
-color: #84dccf;
-text-decoration: none;
-}
-
-.box8 h1{
-    margin: 20px auto;
-    padding-top: 40px;
-}
+/* Membership plan */
 
 .card {
     display: flex;
@@ -410,32 +429,34 @@ text-decoration: none;
     border: 2px solid #84dccf;
  }
 
- button.member{
-     width: 100px;
-     padding: 10px 10px;
-     margin: 0 auto;
-     margin-bottom: 70px;
-     color: #84dccf;
-     background-color: white;
-     border: 1px solid #84dccf;
- }
-
- button.member:hover, button.member:active{
-    background-color: #84dccf;
-    color: white;
- }
-
  .card2 {
     display: flex;
     align-content: space-around;
     margin: -30px auto;
  }
+
+ /* Choose Buttons */
  .container3{
     display: flex;
     flex-direction: column;
     margin: -20px auto;
     padding: 15px;
  }
+
+ button.member{
+    width: 100px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    color: #84dccf;
+    background-color: white;
+    border: 1px solid #84dccf;
+}
+
+button.member:hover, button.member:active{
+   background-color: #84dccf;
+   color: white;
+}
 
 /* Signup Page 9 – Credit Card Information */
 
@@ -507,13 +528,6 @@ text-decoration: none;
 .box10 a{
     color: #84dccf;
     text-decoration: none;
-}
-
-.box5 #myDIV {
-    margin: 30px auto;
-    display: flex;
-    justify-content: center;
-    
 }
 
 /* Hide mobile elements */
@@ -690,11 +704,12 @@ button.selected {
 }
 
 /* Signup Page 4 – What's your fitness level */
-
+/* Custom styling for buttons */
 .btn1{
     font-size: 20px;
     margin: 30px auto;
 }
+
 
 .nextP4 button{
     font-size: 18px;
@@ -713,25 +728,26 @@ button.selected {
     width: 120px;
 }
 
-#myDIV2 {
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    
-}
+    /* Time option button styling */
+    #myDIV2 {
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        
+    }
 
-#myDIV3 {
-    margin: 0px auto;
-    display: flex;
-    justify-content: center;
-    
-}
+    #myDIV3 {
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        
+    }
 
-.container{
-    display: inline-block;
-    align-content: center;
-    width: 40%;
- }
+    .container{
+        display: inline-block;
+        align-content: center;
+        width: 40%;
+    }
 
  .nextP5 button{
     font-size: 18px;
@@ -742,13 +758,6 @@ button.selected {
 }
 
 /* Signup Page 6 – What kind of excercise? */
-
-h5{
-    font-size: 28px;
-    padding: 10px 10px;
-    color: #141518;
-
-}
 
 .btn1 {
     margin: 20px auto;
