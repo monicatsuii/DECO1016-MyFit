@@ -540,7 +540,7 @@ button.member:hover, button.member:active{
     for mobile
 --------------------- */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
 
 /* Show mobile and hide desktop elements */
 .mobile{
